@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de Dom con Javascript</title>
+</head>
+<body> 
+    <p class="rojo">Elemento ejemplo Manipulacion del Dom 1</p>
+    <p class="rojo">Elemento ejemplo Manipulacion del Dom 2</p>
+    <p class="rojo">Elemento ejemplo Manipulacion del Dom 3</p>
+
+    <script>
+
+let parrafos= document.getElementsByClassName('rojo');
+
+console.log(parrafos.length);
+
+for(let i=0 ; i<parrafos.length; i++){
+    console.log(parrafos[i].innerHTML);
+}
+
+
+    </script>
+</body>
+</html>
